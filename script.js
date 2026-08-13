@@ -189,12 +189,12 @@ spinButton.addEventListener("click", async () => {
     
     wheels.forEach(w => w.classList.add("blur"));
     
-    let delayTime = 20;
+    let delayTime = 10;
     let finalW1, finalW2, finalW3;
     
     const sleep = (ms) => new Promise(r => setTimeout(r, ms));
     
-    for (let i = 1; i <= 20; i++) {
+    for (let i = 1; i <= 25; i++) {
         let attempts = 0;
         let isInvalid = true;
         
@@ -221,7 +221,8 @@ spinButton.addEventListener("click", async () => {
         });
         
         await sleep(delayTime);
-        delayTime += (i * 2); 
+        // Exponential decay curve for realistic slot machine effect (~3 seconds total)
+        delayTime = 10 + (i * i * 0.8); 
     }
     
     // End Spin
