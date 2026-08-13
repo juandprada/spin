@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin Wheel App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Setup Your Wheels</h1>
+
+            <a href="editor.html" class="edit-link" id="edit-link-btn" style="display: none;">⚙️ Edit Presets</a>
+        </header>
+
+        <main>
+            <div class="controls-section">
+                <div class="preset-selector">
+                    <label for="preset">Presets:</label>
+                    <select id="preset">
+                        <option value="default">Default</option>
+                        <option value="preset1">Preset 1 (Masaje/Beso)</option>
+                        <option value="preset2">Preset 2 (Posiciones)</option>
+                    </select>
+                </div>
+                
+                <textarea id="config-input" class="hidden" placeholder="Paste your words and rules here..."></textarea>
+                <div id="error-message" class="error hidden"></div>
+            </div>
+
+            <div class="wheels-container">
+                <div class="wheel" id="wheel1">
+                    <div class="wheel-content">?</div>
+                </div>
+                <div class="wheel" id="wheel2">
+                    <div class="wheel-content">?</div>
+                </div>
+                <div class="wheel" id="wheel3">
+                    <div class="wheel-content">?</div>
+                </div>
+            </div>
+
+            <div class="timer-section">
+                <div id="timer-display" class="hidden">⏱️ 00:00</div>
+            </div>
+
+            <button id="spin-button" class="btn-spin">
+                <span class="btn-text">SPIN</span>
+                <div class="btn-glow"></div>
+            </button>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

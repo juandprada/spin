@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Editor - Spin Wheel App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container editor-container">
+        <header>
+            <h1>Visual Editor</h1>
+            <p class="subtitle">Add words to the wheels and configure exclusions.</p>
+            <a href="index.html" class="edit-link">⬅ Back to App</a>
+        </header>
+
+        <main>
+            <div class="preset-selector" style="margin-bottom: 2rem;">
+                <label for="editor-preset">Select Preset:</label>
+                <select id="editor-preset">
+                    <option value="default">Default</option>
+                    <option value="preset1">Preset 1 (Masaje/Beso)</option>
+                    <option value="preset2">Preset 2 (Posiciones)</option>
+                </select>
+            </div>
+            
+            <div class="editor-grid">
+                <!-- Wheel 1 -->
+                <div class="editor-box">
+                    <h3>Wheel 1</h3>
+                    <div class="chip-input-container">
+                        <input type="text" id="input-w1" placeholder="Type word & press Enter..." class="chip-input">
+                    </div>
+                    <div class="chip-list" id="chips-w1"></div>
+                </div>
+
+                <!-- Wheel 2 -->
+                <div class="editor-box">
+                    <h3>Wheel 2</h3>
+                    <div class="chip-input-container">
+                        <input type="text" id="input-w2" placeholder="Type word & press Enter..." class="chip-input">
+                    </div>
+                    <div class="chip-list" id="chips-w2"></div>
+                </div>
+
+                <!-- Wheel 3 -->
+                <div class="editor-box">
+                    <h3>Wheel 3</h3>
+                    <div class="chip-input-container">
+                        <input type="text" id="input-w3" placeholder="Type word & press Enter..." class="chip-input">
+                    </div>
+                    <div class="chip-list" id="chips-w3"></div>
+                </div>
+            </div>
+
+            <div class="editor-box exclusions-box">
+                <h3>Exclusions Builder</h3>
+                <p class="subtitle" style="font-size: 0.85rem; margin-bottom: 1rem;">Select two words that should NEVER appear together.</p>
+                <div class="exclusion-controls">
+                    <select id="exc-dropdown-1" class="exc-select">
+                        <option value="">Select first word...</option>
+                    </select>
+                    <span class="exc-arrow">→</span>
+                    <select id="exc-dropdown-2" class="exc-select">
+                        <option value="">Select second word...</option>
+                    </select>
+                    <button id="add-exclusion-btn" class="btn-add">Add Rule</button>
+                </div>
+                <div class="chip-list" id="chips-exc" style="margin-top: 1.5rem;"></div>
+            </div>
+            
+            <div style="display:flex; justify-content:center; align-items:center; flex-direction:column; margin-top: 2rem;">
+                <button id="save-button" class="btn-spin" style="width: auto; padding: 1rem 4rem;">
+                    <span class="btn-text">SAVE CHANGES</span>
+                    <div class="btn-glow"></div>
+                </button>
+                <div id="save-message" class="hidden" style="color: #4ade80; text-align: center; margin-top: 1rem; font-weight: bold;">Saved successfully!</div>
+            </div>
+        </main>
+    </div>
+
+    <script src="editor.js"></script>
+</body>
+</html>
