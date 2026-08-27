@@ -1,7 +1,7 @@
 
 const DEFAULT_PRESETS = {
     preset1: "beso, masaje ; cuello de karen acostados, cuello de juan acostados, cuello de juan sentados, cuello de karen sentados, amiga de perrito, amiga acostada, amiga sentada, boobies acostada, boca acostados, boca sentados ; 1 minuto, 2 minutos ; masaje - amiga sentada, masaje - amiga de perrito, beso - cuello de juan acostados, beso - cuello de juan sentados, masaje - boca sentados, masaje - boca acostados, masaje - boobies acostada",
-    preset2: "torcida, juan encima, karen encima, perrito, sapito, sapito torcida, torcida pro, sentados ; 2 minutos, 3 minutos ; venirse boobies, venirse boca, venirse espalda, venirse ombligo ; torcida - venirse boobies, torcida - venirse ombligo, torcida pro - venirse boobies, torcida - venirse espalda, torcida pro - venirse espalda, torcida pro - venirse ombligo, encima - venirse espalda, sentados - venirse boca, sentados - venirse espalda, sentados - venirse boobies, perrito - venirse ombligo, karen encima - venirse boobies, karen encima - venirse ombligo, karen encima - venirse espalda"
+    preset2: "torcida, juan encima, karen encima, perrito, sapito, sapito torcida, torcida pro, sentados ; 2 minutos, 3 minutos ; venirse boobies, venirse boca, venirse espalda, venirse ombligo ; torcida - venirse boobies, torcida - venirse ombligo, torcida pro - venirse boobies, torcida - venirse espalda, torcida pro - venirse espalda, torcida pro - venirse ombligo, juan encima - venirse espalda, encima - venirse espalda, sentados - venirse boca, sentados - venirse espalda, sentados - venirse boobies, perrito - venirse ombligo, karen encima - venirse boobies, karen encima - venirse ombligo, karen encima - venirse espalda"
 };
 
 // Load presets from localStorage

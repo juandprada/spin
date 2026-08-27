@@ -169,17 +169,54 @@ textarea:focus {
     opacity: 0.8;
 }
 
-.timer-section {
-    text-align: center;
-    min-height: 60px;
+.combo-info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(15, 23, 42, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.95rem;
 }
 
-#timer-display {
-    font-size: 3.5rem;
-    font-weight: 900;
-    color: var(--accent);
-    text-shadow: 0 0 20px rgba(244, 63, 94, 0.4);
-    font-variant-numeric: tabular-nums;
+.combo-counter {
+    font-weight: 600;
+    color: #38bdf8;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    letter-spacing: 0.3px;
+}
+
+.btn-reset-history {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: var(--text-muted);
+    padding: 0.4rem 0.85rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-reset-history:hover {
+    color: var(--text-main);
+    border-color: var(--primary);
+    background: rgba(139, 92, 246, 0.2);
+}
+
+.status-toast {
+    background: rgba(56, 189, 248, 0.12);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    color: #38bdf8;
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 0.95rem;
+    font-weight: 500;
+    animation: fadeIn 0.3s ease;
 }
 
 .btn-spin {
@@ -216,14 +253,9 @@ textarea:focus {
     box-shadow: none;
 }
 
-/* Animations */
-@keyframes pulse {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.8; transform: scale(0.98); }
-}
-
-.timer-running {
-    animation: pulse 2s infinite;
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 @media (max-width: 600px) {
